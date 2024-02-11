@@ -43,8 +43,8 @@ void readdatafromfile();
 void addnewitem();
 void rerunadditems();
 void deleteItem();
-void rerundeleteitem();
-void refreshsystem();
+void rerunupdateitem();
+
 
 void loadinganimation();
 
@@ -115,7 +115,7 @@ void readdatafromfile() {
     fclose(file);
 }
 
-void rerundeleteitem(){
+void rerunupdateitem(){
 char decision[10];
     printf("Do you want to update more item prices? (Y/N)\n");
     scanf(" %c", &decision[0]);
@@ -127,7 +127,7 @@ char decision[10];
        main();
     } else {
         printf("Invalid input. Please enter 'Y' or 'N'.\n");
-        rerundeleteitem();
+        rerunupdateitem();
     }
 
 }
@@ -307,7 +307,7 @@ void changeitemprices() {
 
         printf("Price for %s updated successfully!\n", menu[menuIndex].itemName);
         writedatatofile();
-        rerundeleteitem();
+        rerunupdateitem();
     } else {
         printf("Invalid item code.\n");
     }
