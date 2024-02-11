@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1707479440 source:i:\miniproject\liquershop\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<stdbool.h>
+	<string.h>
+	<time.h>
+

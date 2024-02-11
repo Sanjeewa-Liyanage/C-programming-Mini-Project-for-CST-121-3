@@ -1,0 +1,3 @@
+Old_Arrack 3900.000000
+Carlsburg 700.000000
+wild_apple 700.000000
